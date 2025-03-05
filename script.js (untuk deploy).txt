@@ -1,0 +1,39 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const yesBtn = document.getElementById("yes-btn");
+    const noBtn = document.getElementById("no-btn");
+    const question = document.getElementById("question");
+    const questionImage = document.getElementById("question-image");
+    const bgMusic = document.getElementById("bgMusic");
+
+    const questions = [
+        { text: "buktinyaa kau lagi liat web ini saja cantikkk sekaliii", image: "https://pin.it/3GTCIdebP" },
+        { text: "kalau saya bilang kau cantiknya tak terhingga percaya ga?", image: "https://pin.it/32tG34r7D" },
+        { text: "niaaa dekattt lagiiii yukkkk", image: "https://pin.it/4KzMqC9cr" }
+    ];
+    
+    const yesResponses = [
+        "pantasss, kan cuma saya yang ada di hatimu ❤️",
+        "Ayoookmiii 💖"
+    ];
+    
+    let currentQuestion = 0;
+
+    yesBtn.addEventListener("click", function() {
+        if (currentQuestion < questions.length) {
+            question.innerText = questions[currentQuestion].text;
+            questionImage.src = questions[currentQuestion].image;
+            currentQuestion++;
+        } else {
+            question.innerText = "Aku sayang Niaaa 💖";
+            yesBtn.style.display = "none";
+            noBtn.style.display = "none";
+            bgMusic.play();
+        }
+    });
+    
+    noBtn.addEventListener("mouseover", function() {
+        noBtn.style.position = "absolute";
+        noBtn.style.left = Math.random() * window.innerWidth + "px";
+        noBtn.style.top = Math.random() * window.innerHeight + "px";
+    });
+});

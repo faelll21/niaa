@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">niaa kenapa kau cantik sekaliii wehh?</h1>
+        <img src="https://pin.it/plDuLGDhK" alt="Gambar" class="question-image">
+        <div class="button-container">
+            <button class="yes-btn">Karena memang dah cantik ✨</button>
+            <button class="no-btn">Masaa sihh 😳</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="your-music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
